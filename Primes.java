@@ -20,13 +20,13 @@ public class Primes {
         } 
         int count = 0;
         for (int i = 2; i <= n ; i++) {
-            if (arrPrime [i]) {
+            if (arrPrime[i]) {
             System.out.println(i);
             count++;
             }
         }
-        double percent = ((double)count / (double)(n-1) * 100) ;
-            System.out.println(" There are " + count + " primes between 2 and " + n + "(" + (int) percent + " % are primes" + ")");
+        double percent = ((double)count/n * 100) ;
+            System.out.println("There are " + count + " primes between 2 and " + n + " (" + (int) percent + "% are primes" + ")");
              
         }
     
