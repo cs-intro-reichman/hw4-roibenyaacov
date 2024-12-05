@@ -36,22 +36,12 @@ public static boolean contains(String str1, String str2) {
     } else if (str2.length() == 0) {
         return true;
     }
-    char c = str2.charAt(0);
-    for (int i = 0; i < str1.length(); i++) {
-        if (str1.charAt(i) == c) {
-            int index = i;
-            for (int j = 0; j < str2.length(); j++) {
-                if (str2.charAt(j) == str1.charAt(index)) {
-                    index++;
-                    if (j == str2.length() -1) {
-                        return true; 
-                    }
-                } else {
-                    break;
-                }
-            }
-        }
+    int len = str2.length();
+    for (int i = 0; i < str1.length() - str2.length(); i++) {
+        if (str1.substring(i, i + len).equals(str2)) {
+            return true;  
     }
-    return false;
+}
+return false;
 }
 }
