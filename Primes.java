@@ -4,7 +4,7 @@ public class Primes {
         boolean[] arrPrime = new boolean[n + 1 ];
         double sqrt = Math.sqrt(n);
         int p = 2; 
-
+        System.out.println("Prime numbers up to " + n + ":" );
         for (int i = 2; i <= n; i++) {
             arrPrime [i] = true; 
         }
@@ -26,7 +26,7 @@ public class Primes {
             }
         }
         double percent = ((double)count / (double)(n-1) * 100) ;
-            System.out.println(" There are " + count + " primes between 2 and " + n + "(" + (int) percent + "% are primes" + ")");
+            System.out.println(" There are " + count + " primes between 2 and " + n + "(" + (int) percent + " % are primes" + ")");
              
         }
     
