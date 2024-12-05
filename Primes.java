@@ -5,7 +5,7 @@ public class Primes {
         double sqrt = Math.sqrt(n);
         int p = 2; 
 
-        for (int i = 2; i < n; i++) {
+        for (int i = 2; i <= n; i++) {
             arrPrime [i] = true; 
         }
         while (p <= sqrt) { 
@@ -19,13 +19,13 @@ public class Primes {
             p++;
         } 
         int count = 0;
-        for (int i = 2; i < n ; i++) {
+        for (int i = 2; i <= n ; i++) {
             if (arrPrime [i]) {
             System.out.println(i);
             count++;
             }
         }
-        double percent = ((double)count / (double)n) * 100 ;
+        double percent = ((double)count / (double)(n-1) * 100) ;
             System.out.println(" There are " + count + " primes between 2 and " + n + "(" + (int) percent + "% are primes" + ")");
              
         }
