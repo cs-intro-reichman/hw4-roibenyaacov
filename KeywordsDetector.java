@@ -30,7 +30,7 @@ public class KeywordsDetector {
                  for (int j = 0; j < keywords.length; j++) {
                       String str2 = keywords [j];      
                       if (contains(str1, str2)) {
-                           System.out.println(lowSentence [i]); 
+                           System.out.println(sentences [i]); 
                         }
                     }
                 }
